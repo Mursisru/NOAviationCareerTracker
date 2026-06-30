@@ -11,15 +11,10 @@
 ---
 
 ## Critical warnings
-
 > [!IMPORTANT]
-> **NOLoader required** - install [NOLoader](https://github.com/Mursisru/NOLoader/releases) before this mod.
-
-> [!IMPORTANT]
-> **Close Nuclear Option before PatchTool** - managed DLLs must be unlocked.
-
-> [!IMPORTANT]
-> **Run PatchTool after install or game update** - without IL patches (15 Cecil postfixes in `mod.json`), UI and hooks silently fail.
+> - **NOLoader required** - install [NOLoader](https://github.com/Mursisru/NOLoader/releases) before this mod.
+> - **Close Nuclear Option before PatchTool** - managed DLLs must be unlocked.
+> - **Run PatchTool after install or game update** - without IL patches (15 Cecil postfixes in `mod.json`), UI and hooks silently fail.
 
 > [!WARNING]
 > **Placeholder or stale `expectedSignatureHash` prevents load** - verify real 16-hex hashes match your game build.
