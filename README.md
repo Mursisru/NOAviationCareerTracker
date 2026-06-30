@@ -8,12 +8,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/Mursisru/NOAviationCareerTracker/blob/main/LICENSE)
 [![.NET Framework 4.8](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4)](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
-**Aviation Career Tracker** is a NOLoader meta-mod for the flight sim [**Nuclear Option**](https://store.steampowered.com/app/2168680/Nuclear_Option/). It adds a persistent career layer: rank progression, tactical flight analytics, a graphical flight log, binary mission recordings (`.norep`), and a TacView-style 3D replay — without polling the game loop for state.
-
-**Mod id:** `com.at747.aviationcareer`  
-**Load stage:** `MainMenu`  
-**Current release:** `0.1.0`
-
 ---
 
 ## Critical warnings
@@ -32,6 +26,12 @@
 
 > [!NOTE]
 > **`loadStage: MainMenu`** - career UI mounts from main menu; data in `Data/profile.json` and `Data/Recordings/*.norep`.
+
+**Aviation Career Tracker** is a NOLoader meta-mod for the flight sim [**Nuclear Option**](https://store.steampowered.com/app/2168680/Nuclear_Option/). It adds a persistent career layer: rank progression, tactical flight analytics, a graphical flight log, binary mission recordings (`.norep`), and a TacView-style 3D replay — without polling the game loop for state.
+
+**Mod id:** `com.at747.aviationcareer`  
+**Load stage:** `MainMenu`  
+**Current release:** `0.1.0`
 
 ## Table of contents
 
