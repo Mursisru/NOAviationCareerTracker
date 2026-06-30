@@ -1,0 +1,108 @@
+{
+  "id": "com.at747.aviationcareer",
+  "guid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "version": "0.1.0",
+  "name": "Aviation Career Tracker",
+  "assembly": "NOLoader.AviationCareer.dll",
+  "entryType": "NOLoader.AviationCareer.AviationCareerMod",
+  "loadStage": "MainMenu",
+  "dependencies": [],
+  "patches": [
+    {
+      "target": "MissionManager::StartMission",
+      "inject": "NOLoader.AviationCareer.Patches::StartMissionPostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "0AD3D0C127CA84AC"
+    },
+    {
+      "target": "Unit::ReportKilled",
+      "inject": "NOLoader.AviationCareer.Patches::ReportKilledPostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "457559BB5A15AE4C"
+    },
+    {
+      "target": "Unit::RegisterMissile",
+      "inject": "NOLoader.AviationCareer.Patches::RegisterMissilePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "BF0E57649739B434"
+    },
+    {
+      "target": "Unit::DeregisterMissile",
+      "inject": "NOLoader.AviationCareer.Patches::DeregisterMissilePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "1F728476D86616C2"
+    },
+    {
+      "target": "UnitPart::ApplyDamage",
+      "inject": "NOLoader.AviationCareer.Patches::ApplyDamagePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "00B2BC8F05E053F3"
+    },
+    {
+      "target": "WeaponStation::Fire",
+      "inject": "NOLoader.AviationCareer.Patches::WeaponFirePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "7A21078F2D12D1FE"
+    },
+    {
+      "target": "Unit::SetFiringState",
+      "inject": "NOLoader.AviationCareer.Patches::SetFiringStatePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "4B4481EE9F0F1A0B"
+    },
+    {
+      "target": "Aircraft::SetGear",
+      "inject": "NOLoader.AviationCareer.Patches::SetGearPostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "E755503C534F669A"
+    },
+    {
+      "target": "Pilot::SwitchState",
+      "inject": "NOLoader.AviationCareer.Patches::PilotSwitchStatePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "A566EA538F87D8DB"
+    },
+    {
+      "target": "Pilot::SwitchStateNew",
+      "inject": "NOLoader.AviationCareer.Patches::PilotSwitchStateNewPostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "50ABED9973308E6A"
+    },
+    {
+      "target": "GameplayUI::PauseGame",
+      "inject": "NOLoader.AviationCareer.Patches::PauseGamePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "CFECFD8F8AF25F6B"
+    },
+    {
+      "target": "Leaderboard::Awake",
+      "inject": "NOLoader.AviationCareer.Patches::LeaderboardAwakePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "8BA451E8404EF74C"
+    },
+    {
+      "target": "AircraftSelectionMenu::OnEnable",
+      "inject": "NOLoader.AviationCareer.Patches::BriefingStartPostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "06C40AFA5AAEB608"
+    },
+    {
+      "target": "MainMenu::Start",
+      "inject": "NOLoader.AviationCareer.Patches::MainMenuStartPostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "95B40B54CF96004C"
+    },
+    {
+      "target": "NuclearOption.NetworkTransforms.AircraftNetworkTransform::Receive",
+      "inject": "NOLoader.AviationCareer.Patches::AircraftNetworkTransformReceivePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "7FA49B22AA7C292F"
+    },
+    {
+      "target": "NuclearOption.NetworkTransforms.MissileNetworkTransform::Receive",
+      "inject": "NOLoader.AviationCareer.Patches::MissileNetworkTransformReceivePostfix",
+      "method": "Postfix",
+      "expectedSignatureHash": "C1EF7339E245EEBB"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+# NOAviationCareerTracker — Project Memory
+
+
+
+## Active Focus
+
+Aviation Career Tracker (ACT) — NOLoader meta-mod: Dashboard, Flight Log tabs, .norep recorder, TacView player.
+
+
+
+## NOLoader Deploy (ОБЯЗАТЕЛЬНО)
+
+1. **Игра закрыта** перед deploy (PatchTool патчит `Managed/*.dll`)
+
+2. `.\scripts\deploy-mod.ps1` — build **DEV_SDK** + copy DLL + **PatchTool** (как MissileCamera)
+
+3. `expectedSignatureHash` в `mod.json` — только реальные 16 hex (через `PatchTool hash-patch`)
+
+4. Без PatchTool патчи **не попадают** в Assembly-CSharp → UI/hooks молчат
+
+5. Логи: `NOLoader/logs/proxy.log`, `NOLoader/logs/noloader_ring.log` (DEV)
+
+6. Полные правила NOLoader: `source\repos\NOLoader_Engine\.cursorrules`
+
+
+
+## Architecture
+
+- **Loader:** NOLoader (`loadStage: MainMenu`)
+
+- **Entry:** `AviationCareerMod : INOMod, INOModTickSlow`
+
+- **Layers:** ACT.Core, ACT.Recording (.norep), ACT.UI, Patches.cs (Cecil inject)
+
+- **Zero-Overhead:** NetworkTransform Receive + game event Postfixes only
+
+
+
+## Deployment
+
+`.\scripts\deploy-mod.ps1` → `<Game>/NOLoader/mods/AviationCareer/`
+
+
+
+## Patch Hashes (game build current)
+
+MissionManager::StartMission=0AD3D0C127CA84AC, MainMenu::Start=95B40B54CF96004C, AircraftSelectionMenu::OnEnable=06C40AFA5AAEB608 (see mod.json)
+
+
+
+## Version
+
+0.1.0 Build DEV1P12V
+
+
+
+## Session 2026-06-24
+
+- Fix: mod не грузился — placeholder hashes + deploy без PatchTool
+
+- Реальные signature hashes, deploy-mod.ps1 с PatchTool DEV_SDK
+
+- OnLoad fallback: FindObjectOfType MainMenu → mount UI
+
+- UI polish DEV1P11V: ACTDesignTokens (font scale), TextIn anchors, PanelFrame outlines, square RankRing (AspectRatioFitter), nav rail 10.5% fixed row height, top bar badge+close, faction tab без дублирующих bar-list, bar labels midline+fill track
+

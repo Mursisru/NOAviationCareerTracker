@@ -1,0 +1,22 @@
+# Build
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.idea/
+
+# Deploy artifacts (DLLs are built locally or taken from GitHub Releases)
+deploy/NOLoader/mods/AviationCareer/*.dll
+
+# Release build staging (attached via GitHub Releases)
+release/**/AviationCareer/
+release/**/*.zip
+
+# Local overrides
+Directory.Build.user.props
+
+# OS / editor
+Thumbs.db
+.DS_Store
+*.log
