@@ -2,14 +2,11 @@
 
 # Aviation Career Tracker (ACT)
 
-[![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/) [![NOLoader](https://img.shields.io/badge/Loader-NOLoader-purple)](https://github.com/Mursisru/NOLoader) [![Version](https://img.shields.io/badge/Version-0.1.0-green)]() [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
-
-
 [![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/)
 [![NOLoader](https://img.shields.io/badge/Loader-NOLoader-purple)](https://github.com/Mursisru/NOLoader)
-[![Version](https://img.shields.io/github/v/release/Mursisru/NOAviationCareerTracker?label=Release)](https://github.com/Mursisru/NOAviationCareerTracker/releases)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4)](https://dotnet.microsoft.com/download/dotnet-framework/net48)
+[![Version](https://img.shields.io/github/v/release/Mursisru/NOAviationCareerTracker?label=Version&color=green)](https://github.com/Mursisru/NOAviationCareerTracker/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](https://github.com/Mursisru/NOAviationCareerTracker/blob/main/LICENSE)
+[![.NET Framework 4.8](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4)](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
 **Aviation Career Tracker** is a NOLoader meta-mod for the flight sim [**Nuclear Option**](https://store.steampowered.com/app/2168680/Nuclear_Option/). It adds a persistent career layer: rank progression, tactical flight analytics, a graphical flight log, binary mission recordings (`.norep`), and a TacView-style 3D replay — without polling the game loop for state.
 
