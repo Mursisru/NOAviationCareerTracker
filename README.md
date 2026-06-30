@@ -16,8 +16,26 @@
 
 ---
 
+## Critical warnings
+
+> [!IMPORTANT]
+> **NOLoader required** - install [NOLoader](https://github.com/Mursisru/NOLoader/releases) before this mod.
+
+> [!IMPORTANT]
+> **Close Nuclear Option before PatchTool** - managed DLLs must be unlocked.
+
+> [!IMPORTANT]
+> **Run PatchTool after install or game update** - without IL patches (15 Cecil postfixes in `mod.json`), UI and hooks silently fail.
+
+> [!WARNING]
+> **Placeholder or stale `expectedSignatureHash` prevents load** - verify real 16-hex hashes match your game build.
+
+> [!NOTE]
+> **`loadStage: MainMenu`** - career UI mounts from main menu; data in `Data/profile.json` and `Data/Recordings/*.norep`.
+
 ## Table of contents
 
+- [Critical warnings](#critical-warnings)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Requirements](#requirements)
