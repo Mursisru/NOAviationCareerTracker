@@ -20,3 +20,11 @@ Directory.Build.user.props
 Thumbs.db
 .DS_Store
 *.log
+libs/
+Directory.Build.props
+.cursorrules
+.cursor/
+ffmpeg.exe
+local_build_scripts/
+_buildroot/
+.debug/

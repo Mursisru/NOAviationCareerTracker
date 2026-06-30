@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.0] - 2026-06-30
+
+### Changed
+- Documentation refresh: Developer header, badges, GitHub Alerts, Keywords, gitignore hygiene.
+
+
 All notable changes to **Aviation Career Tracker (ACT)** are documented here.  
 Release tags on GitHub use clean semver only (`0.1.0`). Development builds append `Build DEV…` in `AppVersion.DisplayVersion`.
 

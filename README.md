@@ -1,4 +1,9 @@
+**Developer:** Mursisru
+
 # Aviation Career Tracker (ACT)
+
+[![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/) [![NOLoader](https://img.shields.io/badge/Loader-NOLoader-purple)](https://github.com/Mursisru/NOLoader) [![Version](https://img.shields.io/badge/Version-0.1.0-green)]() [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
+
 
 [![Nuclear Option](https://img.shields.io/badge/Game-Nuclear%20Option-blue)](https://store.steampowered.com/app/2168680/Nuclear_Option/)
 [![NOLoader](https://img.shields.io/badge/Loader-NOLoader-purple)](https://github.com/Mursisru/NOLoader)
@@ -88,6 +93,9 @@ Open the in-game **Aviation Career** panel from the main menu to see the dashboa
 ---
 
 ## Player installation
+
+> [!IMPORTANT]
+> **NOLoader required** - install [NOLoader](https://github.com/Mursisru/NOLoader/releases) before this mod.
 
 See **[docs/INSTALL.md](docs/INSTALL.md)** for step-by-step instructions.
 
@@ -256,3 +264,9 @@ Logs: `NOLoader/logs/proxy.log`, `NOLoader/logs/noloader_ring.log` (DEV builds).
 - [NOLoader](https://github.com/Mursisru/NOLoader)
 - [Nuclear Option on Steam](https://store.steampowered.com/app/2168680/Nuclear_Option/)
 - [Releases](https://github.com/Mursisru/NOAviationCareerTracker/releases)
+
+---
+
+## Keywords
+
+nuclear-option, noloader, mod, noaviationcareertracker, csharp, unity
